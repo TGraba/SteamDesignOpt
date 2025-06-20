@@ -1,4 +1,7 @@
-# Steam Game Design Optimization Framework
+# SteamDesignOpt
+
+![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
+![License](https://img.shields.io/github/license/TGraba/SteamDesignOpt)
 
 This repository contains the full Python pipeline used in the research paper:
 
@@ -16,7 +19,7 @@ This project implements a modular data-driven framework for analyzing and optimi
 ## 🧩 Project Structure
 
 ```
-steam-optimization-framework/
+SteamDesignOpt/
 ├── data/
 │   ├── games_sample.csv
 │   └── games_sample_normalized.csv (generated)
@@ -40,8 +43,8 @@ steam-optimization-framework/
 Clone the repository and install dependencies using pip:
 
 ```bash
-git clone https://github.com/yourusername/steam-optimization-framework.git
-cd steam-optimization-framework
+git clone https://github.com/TGraba/SteamDesignOpt.git
+cd SteamDesignOpt
 pip install -r requirements.txt
 ```
 
@@ -111,7 +114,7 @@ Run the scripts **in this order**:
   target = positive_ratings / (positive_ratings + negative_ratings)
   ```
 - **Explainability**: SHAP values used to derive feature importance.
-- **Optimization**: `scipy.optimize.linprog` solves for optimal feature mix under constraint `∑x_i ≤ B`.
+- **Optimization**: `scipy.optimize.linprog` solves for optimal feature mix under constraint `∑xᵢ ≤ B`.
 
 ---
 
@@ -133,4 +136,4 @@ This project is licensed under the MIT License. See [LICENSE](./LICENSE) for det
 For any questions or collaboration proposals, please contact:  
 **Tvrtko Grabarić**  
 University of Zagreb, Faculty of Graphic Arts  
-tvrtko.grabaric@grf.hr
+tvrtko.grabaric@grf.unizg.hr
